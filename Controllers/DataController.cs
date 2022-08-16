@@ -15,9 +15,10 @@ namespace Smart_farm.Controllers
         }
 
         [HttpGet]
-        public async Task<Model.RecordData> Get()
+        public async Task<Model.RealTime> Get()
         {
-            return db.recordDatas.OrderBy(r => r.datetime).Last();
+            Model.SensorContext sensorContext = new Model.SensorContext();
+            return sensorContext.RealTimes.FirstOrDefault(x => x.Name == "D1Wifi");
         }
 
         [HttpGet("DiWiFiPush")]
