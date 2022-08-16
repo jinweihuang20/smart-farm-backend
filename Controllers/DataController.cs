@@ -14,11 +14,18 @@ namespace Smart_farm.Controllers
             db = new Model.DBContext(config);
         }
 
-        [HttpGet]
-        public async Task<Model.RealTime> Get()
+        [HttpGet("D1WIFI")]
+        public async Task<Model.RealTime> GetD1WIFI()
         {
             Model.SensorContext sensorContext = new Model.SensorContext();
             return sensorContext.RealTimes.FirstOrDefault(x => x.Name == "D1Wifi");
+        }
+
+        [HttpGet("Mega2560")]
+        public async Task<Model.RealTime> GetMega2560()
+        {
+            Model.SensorContext sensorContext = new Model.SensorContext();
+            return sensorContext.RealTimes.FirstOrDefault(x => x.Name == "Mega2560");
         }
 
         [HttpGet("DiWiFiPush")]
