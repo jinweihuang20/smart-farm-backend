@@ -3,7 +3,7 @@ namespace Smart_farm.Model
 {
     public class Arudino
     {
-        public Model.DBContext dbContext;
+        public Model.SensorContext dbContext;
         public Arudino(string COM, int BaudRate = 9600)
         {
             this.COM = COM;
@@ -49,27 +49,46 @@ namespace Smart_farm.Model
                 return;
             }
             Console.WriteLine(str);
+            double humidity = double.Parse(splited[1]);
+            int sensorRaw = int.Parse(splited[3]);
+            bool relayOn = bool.Parse((splited[5] == "1").ToString());
+            Mega2560 data = new Mega2560
+            {
+                Datetime = DateTime.Now,
+                Humidity = humidity,
+                Raw = sensorRaw,
+                Relayon = relayOn,
+            };
+
+            var realTimeData = dbContext.RealTimes.FirstOrDefault(f => f.Name == "Mega2560");
+            if (realTimeData != null)
+            {
+                realTimeData.Datetime = data.Datetime;
+                realTimeData.Humidity = data.Humidity;
+                realTimeData.Raw = data.Raw;
+                realTimeData.Relayon = data.Relayon;
+            }
+            else
+                dbContext.RealTimes.Add(new RealTime
+                {
+                    Datetime = data.Datetime,
+                    Humidity = data.Humidity,
+                    Relayon = data.Relayon,
+                    Raw = data.Raw,
+                    Name = "Mega2560"
+                });
+
             if ((DateTime.Now - lastRecordTime).TotalSeconds >= 60)
             {
-                double humidity = double.Parse(splited[1]);
-                int sensorRaw = int.Parse(splited[3]);
-                bool relayOn = bool.Parse((splited[5] == "1").ToString());
-                RecordData data = new RecordData
-                {
-                    datetime = DateTime.Now,
-                    humidity = humidity,
-                    sensorRawData = sensorRaw,
-                    isRelayOn = relayOn,
-                };
-                int rowCount = dbContext.recordDatas.Count();
+                int rowCount = dbContext.Mega2560s.Count();
                 if (rowCount >= 10000)
                 {
-                    dbContext.recordDatas.Remove(dbContext.recordDatas.First());
+                    dbContext.Mega2560s.Remove(dbContext.Mega2560s.First());
                 }
-                lastRecordTime = data.datetime;
-                dbContext.recordDatas.Add(data);
-                dbContext.SaveChanges();
+                lastRecordTime = data.Datetime;
+                dbContext.Mega2560s.Add(data);
             }
+            dbContext.SaveChanges();
         }
     }
 }

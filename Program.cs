@@ -10,12 +10,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
 var app = builder.Build();
 
-Smart_farm.Model.DBContext db = new Smart_farm.Model.DBContext(app.Configuration);
-db.Database.EnsureCreated();
 
 try
 {
-    Smart_farm.Model.Arudino arduino = new Smart_farm.Model.Arudino("COM3") { dbContext = db };
+    Smart_farm.Model.Arudino arduino = new Smart_farm.Model.Arudino("COM3") { dbContext = new Smart_farm.Model.SensorContext() };
     arduino.FetchWork();
 }
 catch (Exception ex)

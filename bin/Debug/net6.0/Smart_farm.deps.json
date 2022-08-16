@@ -9,6 +9,7 @@
       "Smart_farm/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.8",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "Npgsql": "6.0.6",
