@@ -20,6 +20,12 @@ namespace Smart_farm.Controllers
             return db.recordDatas.OrderBy(r => r.datetime).Last();
         }
 
+        [HttpGet("Push")]
+        public async Task<Model.RecordData> Push(double humidity,int raw)
+        {
+            return db.recordDatas.OrderBy(r => r.datetime).Last();
+        }
+
         [HttpGet("Query")]
         public async Task<Model.RecordData[]> Query(DateTime from , DateTime to)
         {

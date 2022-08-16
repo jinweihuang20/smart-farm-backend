@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Smart_farm.csproj", "Smart_farm/"]
+COPY ["Smart_farm/Smart_farm.csproj", "Smart_farm/"]
 RUN dotnet restore "Smart_farm/Smart_farm.csproj"
 COPY . .
-WORKDIR "/src"
+WORKDIR "/src/Smart_farm"
 RUN dotnet build "Smart_farm.csproj" -c Release -o /app/build
 
 FROM build AS publish

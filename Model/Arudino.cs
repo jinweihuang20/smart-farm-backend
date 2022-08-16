@@ -42,20 +42,18 @@ namespace Smart_farm.Model
         private void Serial_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             var str = serial.ReadLine();
-            str = str.Replace("\r\n", "");
+            str = str.Replace("\r", "");
             string[] splited = str.Split(",");
             if (splited.Length < 6)
             {
                 return;
             }
-
-            if ((DateTime.Now - lastRecordTime).TotalSeconds >= 5)
+            Console.WriteLine(str);
+            if ((DateTime.Now - lastRecordTime).TotalSeconds >= 60)
             {
-
                 double humidity = double.Parse(splited[1]);
                 int sensorRaw = int.Parse(splited[3]);
                 bool relayOn = bool.Parse((splited[5] == "1").ToString());
-
                 RecordData data = new RecordData
                 {
                     datetime = DateTime.Now,
@@ -63,10 +61,14 @@ namespace Smart_farm.Model
                     sensorRawData = sensorRaw,
                     isRelayOn = relayOn,
                 };
+                int rowCount = dbContext.recordDatas.Count();
+                if (rowCount >= 10000)
+                {
+                    dbContext.recordDatas.Remove(dbContext.recordDatas.First());
+                }
                 lastRecordTime = data.datetime;
                 dbContext.recordDatas.Add(data);
                 dbContext.SaveChanges();
-                Console.WriteLine(data);
             }
         }
     }

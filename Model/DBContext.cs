@@ -4,6 +4,7 @@ namespace Smart_farm.Model
     public class DBContext : DbContext
     {
         public DbSet<RecordData> recordDatas { get; set; }
+
         private IConfiguration _config;
 
         public DBContext(IConfiguration config)
