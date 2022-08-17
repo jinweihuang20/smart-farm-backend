@@ -1241,19 +1241,21 @@
   },
   "packageFolders": {
     "C:\\Users\\jinwe\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\Smart_Farm\\Smart_farm\\Smart_farm\\Smart_farm.csproj",
+      "projectUniqueName": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\Smart_farm.csproj",
       "projectName": "Smart_farm",
-      "projectPath": "D:\\Coding\\Smart_Farm\\Smart_farm\\Smart_farm\\Smart_farm.csproj",
+      "projectPath": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\Smart_farm.csproj",
       "packagesPath": "C:\\Users\\jinwe\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\Smart_Farm\\Smart_farm\\Smart_farm\\obj\\",
+      "outputPath": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\jinwe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1265,6 +1267,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1338,7 +1341,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
