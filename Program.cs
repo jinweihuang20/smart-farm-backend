@@ -8,6 +8,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddCors();
+
 var app = builder.Build();
 
 
@@ -28,7 +29,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(c=>c.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+app.UseCors(c => c.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
 app.UseAuthorization();
 

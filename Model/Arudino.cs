@@ -28,6 +28,7 @@ namespace Smart_farm.Model
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 return false;
             }
         }
