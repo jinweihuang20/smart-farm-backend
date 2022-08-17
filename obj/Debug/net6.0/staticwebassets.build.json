@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3CzahyHKm2oSYdR4hPMQupstlE+ZlRDLi/vYRQg8U7I=",
+  "Hash": "BCMgTDvX8xbP9M+wdy3UwlORZyINfkwIAcJyHK4d5MY=",
   "Source": "Smart_farm",
   "BasePath": "_content/Smart_farm",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\css\\819.fa3792f1.css",
+      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\css\\app.bb74ca49.css",
       "SourceId": "Smart_farm",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
       "BasePath": "_content/Smart_farm",
-      "RelativePath": "css/819.fa3792f1.css",
+      "RelativePath": "css/app.bb74ca49.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,24 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\819.fa3792f1.css"
-    },
-    {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\css\\app.fbab6633.css",
-      "SourceId": "Smart_farm",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
-      "BasePath": "_content/Smart_farm",
-      "RelativePath": "css/app.fbab6633.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\app.fbab6633.css"
+      "OriginalItemSpec": "wwwroot\\css\\app.bb74ca49.css"
     },
     {
       "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\css\\chunk-vendors.882e7f9f.css",
@@ -357,40 +340,6 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\819.8a42eef0.js",
-      "SourceId": "Smart_farm",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
-      "BasePath": "_content/Smart_farm",
-      "RelativePath": "js/819.8a42eef0.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\819.8a42eef0.js"
-    },
-    {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\819.8a42eef0.js.map",
-      "SourceId": "Smart_farm",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
-      "BasePath": "_content/Smart_farm",
-      "RelativePath": "js/819.8a42eef0.js.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\819.8a42eef0.js.map"
-    },
-    {
       "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\about.ee9e5a64.js",
       "SourceId": "Smart_farm",
       "SourceType": "Discovered",
@@ -425,12 +374,12 @@
       "OriginalItemSpec": "wwwroot\\js\\about.ee9e5a64.js.map"
     },
     {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\app.116a15a9.js",
+      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\app.f5386655.js",
       "SourceId": "Smart_farm",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
       "BasePath": "_content/Smart_farm",
-      "RelativePath": "js/app.116a15a9.js",
+      "RelativePath": "js/app.f5386655.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -439,15 +388,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\app.116a15a9.js"
+      "OriginalItemSpec": "wwwroot\\js\\app.f5386655.js"
     },
     {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\app.116a15a9.js.map",
+      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\app.f5386655.js.map",
       "SourceId": "Smart_farm",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
       "BasePath": "_content/Smart_farm",
-      "RelativePath": "js/app.116a15a9.js.map",
+      "RelativePath": "js/app.f5386655.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -456,15 +405,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\app.116a15a9.js.map"
+      "OriginalItemSpec": "wwwroot\\js\\app.f5386655.js.map"
     },
     {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\chunk-vendors.b5ec63af.js",
+      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\chunk-vendors.ced9012a.js",
       "SourceId": "Smart_farm",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
       "BasePath": "_content/Smart_farm",
-      "RelativePath": "js/chunk-vendors.b5ec63af.js",
+      "RelativePath": "js/chunk-vendors.ced9012a.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -473,15 +422,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.b5ec63af.js"
+      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.ced9012a.js"
     },
     {
-      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\chunk-vendors.b5ec63af.js.map",
+      "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\js\\chunk-vendors.ced9012a.js.map",
       "SourceId": "Smart_farm",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\",
       "BasePath": "_content/Smart_farm",
-      "RelativePath": "js/chunk-vendors.b5ec63af.js.map",
+      "RelativePath": "js/chunk-vendors.ced9012a.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -490,7 +439,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.b5ec63af.js.map"
+      "OriginalItemSpec": "wwwroot\\js\\chunk-vendors.ced9012a.js.map"
     },
     {
       "Identity": "D:\\ProgramDev\\Smart_Farm\\gwsmartfarm\\wwwroot\\manifest.json",
