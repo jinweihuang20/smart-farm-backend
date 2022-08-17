@@ -13,7 +13,7 @@ var app = builder.Build();
 
 try
 {
-    Smart_farm.Model.Arudino arduino = new Smart_farm.Model.Arudino("COM3") { dbContext = new Smart_farm.Model.SensorContext() };
+    Smart_farm.Model.Arudino arduino = new Smart_farm.Model.Arudino("COM3",115200) { dbContext = new Smart_farm.Model.SensorContext() };
     arduino.FetchWork();
 }
 catch (Exception ex)

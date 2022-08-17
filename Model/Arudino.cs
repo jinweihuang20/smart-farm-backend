@@ -22,6 +22,7 @@ namespace Smart_farm.Model
                 serial.BaudRate = BaudRate;
                 serial.Parity = Parity.None;
                 serial.StopBits = StopBits.One;
+                serial.DataBits = 8;
                 serial.Open();
                 return serial.IsOpen;
             }
@@ -49,8 +50,8 @@ namespace Smart_farm.Model
                 return;
             }
             Console.WriteLine(str);
-            double humidity = double.Parse(splited[1]);
-            int sensorRaw = int.Parse(splited[3]);
+            double humidity = Convert.ToDouble(splited[1]);
+            int sensorRaw = Convert.ToInt32(splited[3]);
             bool relayOn = bool.Parse((splited[5] == "1").ToString());
             Mega2560 data = new Mega2560
             {
